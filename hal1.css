@@ -1,0 +1,146 @@
+body {
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.headerr {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    color: black;
+    margin: 0;
+    text-align: center;
+}
+
+
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 5px dashed #ff6f61;
+    margin: 0;
+    display: block;
+}
+
+.header {
+    background-color: #d48b94;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 20px;
+    vertical-align: top;
+    margin-left: 20px;
+}
+
+.time-together {
+    color: #EA6A6C;
+    font-size: 24px;
+    font-weight: bolder;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.time-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.time-section div {
+    margin: 0 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.time-section div i {
+    font-size: 48px;
+    color: #ff6f61;
+    margin-right: 10px;
+}
+
+.time-section div span {
+    display: block;
+    font-size: 36px;
+    color: #D3719D;
+    font-weight: bold;
+}
+
+.time-section div p {
+    margin: 5px 0 0;
+    font-size: 16px;
+    color: #ff6f61;
+}
+
+.button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.back-button {
+    background-color: #a67c7c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    margin-left: 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.time-item {
+    display: flex;
+    align-items: center;
+}
+
+.time-item i {
+    margin-right: 10px;
+}

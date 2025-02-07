@@ -1,0 +1,96 @@
+body {
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.headerr {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    color: black;
+    margin: 0;
+    text-align: center;
+}
+.container {
+    position: relative;
+    width: 350px; /* Sesuaikan ukuran rectangle */
+    height: 400px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-content {
+    width: 90%; /* Pastikan teks tidak melewati batas container */
+    max-height: 250px; /* Atur tinggi maksimal */
+    overflow: auto; /* Scroll jika teks terlalu panjang */
+    word-wrap: break-word; /* Agar teks tidak keluar */
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    border: 2px solid #f0c0d0; /* Menyesuaikan dengan rectangle */
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8); /* Tambahkan efek background */
+}
+
+.top-icons img {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+}
+
+.flower {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 60px;
+    height: 60px;
+}
+
+.heart {
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    width: 60px;
+    height: 60px;
+}
+
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #a56b6b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Together</title>
+    <link rel="stylesheet" href="hal1.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="headerr">
+        <h1 class="h1">Happy Valentine's Day 💕</h1>
+    </div>
+    <div class="container">
+        <div class="header-container">
+            <img alt="A couple smiling together" class="profile-pic" height="80" src="foto2.jpg" width="80"/>
+            <div class="header">How long have we been together?</div>
+        </div>
+        <div class="time-together">
+            <span id="years">0</span> YEARS <span id="months">0</span> MONTHS
+        </div>
+        <div class="time-section">
+            <div class="time-item">
+                <i class="fas fa-heart"></i>
+                <div>
+                    <span id="days">0</span>
+                    <p>Days</p>
+                </div>
+            </div>
+            <div class="time-item">
+                <div>
+                    <span id="hours">0</span>
+                    <p>Hrs</p>
+                </div>
+            </div>
+            <div class="time-item">
+                <div>
+                    <span id="minutes">0</span>
+                    <p>Mins</p>
+                </div>
+            </div>
+            <div class="time-item">
+                <div>
+                    <span id="seconds">0</span>
+                    <p>Secs</p>
+                </div>
+            </div>
+            <div class="time-item">
+                <i class="fas fa-heart"></i>
+            </div>
+        </div>
+        <button id="you-and-me-button" class="button" >You &amp; Me</button>
+        <button id="back-button" class="back-button">Back</button> <!-- Tambahkan ID -->
+    </div>
+
+    <script>
+        function updateTime() {
+            const startDate = new Date('2023-05-23T00:00:00'); // Tanggal awal pacaran
+            const now = new Date(); // Waktu saat ini
+            const diff = now - startDate; // Selisih waktu dalam milidetik
+
+            // Konversi waktu
+            const seconds = Math.floor((diff / 1000) % 60);
+            const minutes = Math.floor((diff / (1000 * 60)) % 60);
+            const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+            // Hitung tahun dan bulan
+            let years = now.getFullYear() - startDate.getFullYear();
+            let months = now.getMonth() - startDate.getMonth();
+            if (months < 0) {
+                years--;
+                months += 12;
+            }
+
+            // Update tampilan di HTML
+            document.getElementById('years').textContent = years;
+            document.getElementById('months').textContent = months;
+            document.getElementById('days').textContent = days;
+            document.getElementById('hours').textContent = hours;
+            document.getElementById('minutes').textContent = minutes;
+            document.getElementById('seconds').textContent = seconds;
+        }
+
+        // Jalankan updateTime setiap detik
+        setInterval(updateTime, 1000);
+        updateTime(); // Panggil langsung agar tidak delay 1 detik
+
+        // Fungsi untuk tombol back
+        document.getElementById('back-button').addEventListener('click', function() {
+            window.location.href = 'index.html'; // Pindah ke halaman index.html
+        });
+
+        document.getElementById('you-and-me-button').addEventListener('click', function() {
+            window.location.href = 'hal2.html'; // Pindah ke halaman hal2.html
+        });
+    </script>
+</body>
+</html>
